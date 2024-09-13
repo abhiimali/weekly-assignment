@@ -1,0 +1,13 @@
+<nav>
+  <ul class="menu">
+    <li [ngStyle]="{'background-color': selectedMenu === 'home' ? 'lightblue' : ''}" (click)="selectMenu('home')">Home</li>
+    <li [ngStyle]="{'background-color': selectedMenu === 'services' ? 'lightgreen' : ''}" (click)="selectMenu('services')">Services</li>
+    <li [ngStyle]="{'background-color': selectedMenu === 'contact' ? 'lightcoral' : ''}" (click)="selectMenu('contact')">Contact Us</li>
+  </ul>
+</nav>
+
+<div class="chosen">
+  <p>You chose {{ selectedMenu }} menu</p>
+</div>
+
+<hr class="underline">
