@@ -7,7 +7,7 @@
 </nav>
 
 <div class="chosen">
-  <p>You chose {{ selectedMenu }} menu</p>
+  <p [ngStyle]="{'background-color': getBackgroundColor()}">You chose {{ selectedMenu }} menu</p>
 </div>
 
 <hr class="underline">

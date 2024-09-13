@@ -12,6 +12,15 @@ export class Q1Q2NavbarComponent implements OnInit {
   selectMenu(menu: string): void {
     this.selectedMenu = menu;
   }
+
+  getBackgroundColor(): string {
+    switch (this.selectedMenu) {
+      case 'home': return 'lightblue';
+      case 'services': return 'lightgreen';
+      case 'contact': return 'lightcoral';
+      default: return 'transparent';
+    }
+  }
   
   constructor() { }
 
